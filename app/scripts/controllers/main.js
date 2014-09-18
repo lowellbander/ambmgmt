@@ -16,5 +16,5 @@ angular.module('ambmgmtApp')
       'Karma'
     ];
 
-    //$scope.foo = 
+    $scope.foo = Tour.someMethod();
   }]);
