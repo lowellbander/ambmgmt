@@ -8,10 +8,13 @@
  * Controller of the ambmgmtApp
  */
 angular.module('ambmgmtApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', ['$scope', 'Tour', 
+    function ($scope, Tour) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+
+    //$scope.foo = 
+  }]);
