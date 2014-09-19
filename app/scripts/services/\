@@ -19,8 +19,8 @@ angular.module('ambmgmtApp')
       someMethod: function () {
         return meaningOfLife;
       },
-        anotherMethod: function(){
-            return 'monkeys';
-        },
+    anotherMethod: function(){
+                     
+    },
     };
   });
