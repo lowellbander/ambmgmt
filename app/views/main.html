@@ -17,7 +17,7 @@
               </thead>
               <tbody>
                  <tr ng-repeat="party in parties.data">
-                  <td>{{party.date}}</td>
+                  <td>{{party.date | date : 'medium'}}</td>
                   <td>{{party.name}}</td>
                   <td>{{party.email}}</td>
                   <td>{{party.phone}}</td>
