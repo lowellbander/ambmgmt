@@ -1,23 +1,33 @@
-<div class="row marketing">
-  <h4>Tours</h4>
-  <div class="table-responsive">
-    <table class="table table-striped">
-    <tr>
-      <td><b>Date</b></td>
-      <td><b>Name</b></td>
-      <td><b>Email</b></td>
-      <td><b>Phone</b></td>
-      <td><b>Major of Interest</b></td>
-      <td><b>Comments</b></td>
-    </tr>
-    <tr ng-repeat="party in parties.data">
-      <td>{{party.date}}</td>
-      <td>{{party.name}}</td>
-      <td>{{party.email}}</td>
-      <td>{{party.phone}}</td>
-      <td>{{party.majors_of_interest}}</td>
-      <td>{{party.comments}}</td>
-    </tr>
-  </table>
-  </div>
-</div>
+<div class="container-fluid">
+        <div>
+
+          <!-- <h2 class="sub-header">Section title</h2> -->
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Major of Interest</th>
+                  <th>Phone</th>
+                  <th>Comments</th>
+                  <th>#</th>
+                </tr>
+              </thead>
+              <tbody>
+                 <tr ng-repeat="party in parties.data">
+                  <td>{{party.date}}</td>
+                  <td>{{party.name}}</td>
+                  <td>{{party.email}}</td>
+                  <td>{{party.phone}}</td>
+                  <td>{{party.majors_of_interest}}</td>
+                  <td>{{party.comments}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
