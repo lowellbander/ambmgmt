@@ -16,8 +16,8 @@
                 </tr>
               </thead>
               <tbody>
-                 <tr ng-repeat="party in parties.data | orderBy : party.date">
-                  <td>{{party.date | date : 'medium'}}</td>
+                 <tr ng-repeat="party in parties.data | orderBy : party.date" ng-click="copy(party)">
+                  <td>{{party.date | date : 'EEEE, MMM. d, h a'}}</td>
                   <td>{{party.name}}</td>
                   <td>{{party.email}}</td>
                   <td>{{party.phone}}</td>

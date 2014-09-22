@@ -8,8 +8,8 @@
  * Controller of the ambmgmtApp
  */
 angular.module('ambmgmtApp')
-  .controller('MainCtrl', ['$scope', 'Tour', 'Party',
-    function ($scope, Tour, Party) {
+  .controller('MainCtrl', ['$scope', '$log', 'Tour', 'Party',
+    function ($scope, $log, Tour, Party) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -17,5 +17,9 @@ angular.module('ambmgmtApp')
     ];
 
     $scope.parties = Party.get();
+
+    $scope.copy = function (party) {
+    	$log.log(party)
+    }
 
   }]);
