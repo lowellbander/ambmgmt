@@ -19,15 +19,15 @@ angular.module('ambmgmtApp')
     $scope.parties = Party.get();
 
     $scope.copy = function (party) {
-        $scope.snippet = "";
-        $scope.snippet += "When: " + $filter('date')(party.date, 'EEEE, MMM. d @ h a') + '\n';
-        $scope.snippet += "Who: " + party.name + '\n';
-        $scope.snippet += "Email: " + party.email + '\n';
-        $scope.snippet += "Phone: " + party.phone + '\n';
-        $scope.snippet += "Major of Interest: " + party.majors_of_interest + '\n';
-        $scope.snippet += "Comment: " + party.comments+ '\n';
-        $scope.snippet += "How Many: " + party.nVisitors+ '\n';
+        $scope.snippet = '';
+        $scope.snippet += 'When: ' + $filter('date')(party.date, 'EEEE, MMM. d @ h a') + '\n';
+        $scope.snippet += 'Who: ' + party.name + '\n';
+        $scope.snippet += 'Email: ' + party.email + '\n';
+        $scope.snippet += 'Phone: ' + party.phone + '\n';
+        $scope.snippet += 'Major of Interest: ' + party.majors_of_interest + '\n';
+        $scope.snippet += 'Comment: ' + party.comments+ '\n';
+        $scope.snippet += 'How Many: ' + party.nVisitors+ '\n';
         $log.log($scope.snippet);
-    }
+    };
 
   }]);
